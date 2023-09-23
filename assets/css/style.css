@@ -15323,6 +15323,10 @@ header.header-one .header-top-wrapper .right ul li.last::after {
 .header-three.header--sticky.sticky .header-three-wrapper .logo-area .thumbnail {
   display: none;
 }
+.logo-area .thumbnail img {
+  max-width: 200px; /* Set the maximum width */
+  height: auto; /* Maintain the aspect ratio */
+}
 .header-three.header--sticky.sticky .header-three-wrapper .logo-area .thumbnail-2 {
   display: block;
 }
@@ -19448,7 +19452,7 @@ edit .quantity-edit button {
 }
 
 .rts-banner-three-area {
-  background: #151515;
+  background: #655622;
   position: relative;
   z-index: 1;
   overflow: hidden;

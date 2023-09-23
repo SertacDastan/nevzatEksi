@@ -575,7 +575,7 @@
             letter = $(".letter"),
             letterTiming = 0.6,
             spaceTiming = 0.8,
-            stringsArray = ["Function", "Developer", "Rooms", "Intorior", "Design"],
+            stringsArray = ["Burada", "Ürün", "İsİmlerİ", "Dönebİlİr"],
             currentString = 0;
       
       
