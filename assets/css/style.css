@@ -17735,7 +17735,7 @@ edit .quantity-edit button {
   position: relative;
 }
 .title-three-left .bg-title {
-  font-size: 150px;
+  font-size: 110px;
   position: absolute;
   left: 0;
   top: -13px;
@@ -17859,9 +17859,10 @@ edit .quantity-edit button {
 }
 .about-image-thumbnail-3 .image-2 {
   position: absolute;
-  right: 0;
+  right: -50px;
   top: -150px;
   animation: jump-2 8s linear infinite;
+  max-width: 370px;
 }
 
 .single-tab-content-three {
@@ -19483,7 +19484,7 @@ edit .quantity-edit button {
 .rts-banner-three-area .banner-three-wrapper .title {
   font-weight: 700;
   font-size: 90px;
-  line-height: 100px;
+  line-height: 115px;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.08em;
@@ -25988,7 +25989,7 @@ body.index-nine .single-case-wrapper {
 .rts-single-service-three .thumbnail-area img {
   max-width: 100%;
   transition: 0.3s;
-  min-width: max-content;
+  min-width: 100%;
   width: max-content;
 }
 .rts-single-service-three .thumbnail-area:hover img {
