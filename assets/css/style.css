@@ -15301,11 +15301,10 @@ header.header-one .header-top-wrapper .right ul li.last::after {
 .nav-area ul li a {
   text-transform: uppercase;
   font-family: var(--font-primary);
-  color: #fff;
-  font-weight: 700;
+  color: #fff; /*Header text color*/
   letter-spacing: 0.12em;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .header-three {
@@ -15329,6 +15328,11 @@ header.header-one .header-top-wrapper .right ul li.last::after {
 }
 .header-three.header--sticky.sticky .header-three-wrapper .logo-area .thumbnail-2 {
   display: block;
+}
+
+.logo-area .thumbnail-2 img {
+  max-width: 200px; /* Set the maximum width */
+  height: auto; /* Maintain the aspect ratio */
 }
 .header-three.header--sticky.sticky .header-three-wrapper .main-nav-desk nav ul li.has-droupdown:hover a.nav-link {
   color: var(--color-primary);
