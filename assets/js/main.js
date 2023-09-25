@@ -575,8 +575,8 @@
             letter = $(".letter"),
             letterTiming = 0.6,
             spaceTiming = 0.8,
-            stringsArray = ["Burada", "Ürün", "İsİmlerİ", "Dönebİlİr"],
-            currentString = 0;
+            stringsArray = ["UPM", "FANPROM", "SVEZA"],
+            currentString = -1;
       
       
           function revertSplit(targetSplit, newString){

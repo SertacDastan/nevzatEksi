@@ -19457,7 +19457,7 @@ edit .quantity-edit button {
 }
 
 .rts-banner-three-area {
-  background: #655622;
+  background: #293e36;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -19728,14 +19728,14 @@ edit .quantity-edit button {
 }
 
 .bg-breadcrumb {
-  background-image: url(../images/bg/breadcrumb.jpg);
+  background-image: url(../images/stock_foto/pexels-serkan-bayraktar-8094209.jpg);
 }
 
 .breadcrumb-inner .title {
   font-weight: 600;
   font-size: 72px;
   line-height: 110px;
-  color: #0C0A0A;
+  color: white;
 }
 @media only screen and (max-width: 767px) {
   .breadcrumb-inner .title {
@@ -19753,7 +19753,7 @@ edit .quantity-edit button {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #0C0A0A;
+  color: white;
   text-transform: uppercase;
   font-family: var(--font-primary);
   margin: 0 2px;
@@ -19768,7 +19768,7 @@ edit .quantity-edit button {
   bottom: 0;
   height: 1px;
   width: 100%;
-  background: #0C0A0A;
+  background: white;
   left: 0;
   transition: 0.3s;
 }
@@ -29981,6 +29981,8 @@ form.appoinment-form select option {
 .rts-faq-area-three-start {
   background: #151515;
   height: 495px;
+  margin-bottom: 50px;
+    margin-top: 50px;
 }
 @media (max-width: 1400px) {
   .rts-faq-area-three-start {
@@ -30012,7 +30014,7 @@ form.appoinment-form select option {
   padding: 120px;
   background: #FDFDFD;
   box-shadow: 0px 7px 68px 7px rgba(0, 0, 0, 0.06);
-  margin-top: -120px;
+  margin-top: -60px;
 }
 @media (max-width: 1400px) {
   .faq-main-wrapper-three {
@@ -32064,7 +32066,7 @@ form.appoinment-form select option {
 }
 
 .fooetr-bg-3 {
-  background-image: url(../images/footer/02.jpg);
+  background-image: url(../images/stock_foto/vadim-sherbakov-NQSWvyVRIJk-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -32506,7 +32508,9 @@ form.appoinment-form select option {
 }
 
 .rts-footer-two {
-  background: #171717;
+  background-image: url(../images/stock_foto/vadim-sherbakov-NQSWvyVRIJk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .menu-row-wrapper {
