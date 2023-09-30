@@ -80,8 +80,8 @@
   --transition: 0.3s;
   --font-primary: "Titillium Web", sans-serif;
   --font-secondary:"Archivo", sans-serif;
-  --font-size-b1: 16px;
-  --font-size-b2: 16px;
+  --font-size-b1: 18px;
+    --font-size-b2: 18px;
   --font-size-b3: 22px;
   --line-height-b1: 26px;
   --line-height-b2: 26px;
@@ -15308,10 +15308,11 @@ header.header-one .header-top-wrapper .right ul li.last::after {
 }
 
 .header-three {
+  background-color: #2a3e36;
   position: absolute;
   width: 100%;
   z-index: 3;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .header-three.header--sticky {
   position: absolute;
@@ -16637,9 +16638,13 @@ header.header-one .main-nav-desk nav ul li.has-droupdown .submenu.menu-home {
   transition: all 0.3s;
 }
 .header-three .header-three-wrapper ul li.has-droupdown .nav-link::before {
-  right: -10px;
+  font-size: 20px;
+    right: -15px;
   top: 54%;
   transition: all 0.3s;
+}
+.header-three .header-three-wrapper ul li.has-droupdown .nav-link {
+  font-size: 20px;
 }
 .header-three .header-three-wrapper ul li.has-droupdown .nav-link:hover {
   color: var(--color-primary);
@@ -16680,6 +16685,7 @@ header.header-one .main-nav-desk nav ul li.has-droupdown .submenu.menu-home {
   color: var(--color-primary);
 }
 .header-three .header-three-wrapper .nav-area nav ul li a.nav-item {
+  font-size: 20px;
   transition: all 0.3s;
 }
 
@@ -17752,15 +17758,27 @@ edit .quantity-edit button {
   align-items: center;
   -webkit-text-stroke: 1px #000000;
 }
+@media (max-width: 1400px) {
+  .title-three-left .bg-title {
+    font-size: 80px;
+    top: -25px;
+  }
+}
+@media (max-width: 770px) {
+  .title-three-left .bg-title {
+    font-size: 90px;
+    top: -25px;
+  }
+}
 @media (max-width: 576px) {
   .title-three-left .bg-title {
-    font-size: 100px;
+    font-size: 70px;
     top: -25px;
   }
 }
 @media (max-width: 450px) {
   .title-three-left .bg-title {
-    font-size: 68px;
+    font-size: 45px;
     top: -30px;
   }
 }
@@ -17813,13 +17831,13 @@ edit .quantity-edit button {
   font-family: var(--font-primary);
   font-weight: 700;
   background: linear-gradient(180deg, #0C0A0A 0%, rgba(12, 10, 10, 0) 100%);
-  opacity: 0.06;
+  opacity: 0.3;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   height: 93px;
   display: flex;
   align-items: center;
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px #00000091;
   left: 50%;
   transform: translateX(-50%);
   min-width: max-content;
@@ -17924,8 +17942,7 @@ edit .quantity-edit button {
   color: #fff !important;
 }
 
-.thumbnail-area-about {
-  position: relative;
+.thumbnail-area-about img {
 }
 .thumbnail-area-about img.small {
   position: absolute;
@@ -18117,7 +18134,12 @@ edit .quantity-edit button {
 }
 
 .thumbnail-area-about {
-  position: relative;
+  display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
 }
 .thumbnail-area-about .rts-btn.btn-primary {
   border: 7px solid #fff;
@@ -18215,6 +18237,11 @@ edit .quantity-edit button {
 .rts-about-area-about.career .container .about-inner-wrapper-inner {
   margin-bottom: 40px;
 }
+.about-inner-wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .rts-about-area-about.career .container .about-inner-wrapper-inner .title-three-left .title {
   margin-top: 0;
   line-height: 1;
@@ -18248,6 +18275,7 @@ edit .quantity-edit button {
     margin-top: 0;
     padding-right: 0;
     padding-left: 20px;
+    
   }
 }
 @media (max-width: 767px) {
@@ -19735,7 +19763,7 @@ edit .quantity-edit button {
   font-weight: 600;
   font-size: 72px;
   line-height: 110px;
-  color: white;
+  color: rgb(232, 232, 232);
 }
 @media only screen and (max-width: 767px) {
   .breadcrumb-inner .title {
@@ -21011,7 +21039,6 @@ edit .quantity-edit button {
   align-items: center;
   gap: 10px;
   list-style: none;
-  margin-top: 34px;
 }
 .rts-social-wrapper-three ul li {
   margin: 0;
@@ -21022,7 +21049,7 @@ edit .quantity-edit button {
   width: 40px;
   border-radius: 50%;
   display: block;
-  background: #22282C;
+  background: #101111;
   color: #fff;
   display: flex;
   align-items: center;
@@ -22710,33 +22737,40 @@ body.index-nine .single-case-wrapper {
 
 .about-fun-facts-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 110px;
+  justify-content: space-around;
+  }
+  
+  .single-funfacts-about {
+    align-self: auto;
 }
 @media only screen and (max-width: 1199px) {
   .about-fun-facts-wrapper {
     flex-direction: column;
     gap: 30px;
-    align-items: flex-start;
-  }
+    align-items: center;
+    }
+    
+    .single-funfacts-about {
+      width: 80%;
+    }
 }
 .about-fun-facts-wrapper .single-funfacts-about .top .icon img {
-  width: 80px;
-  height: 80px;
+  width: 400px;
+    height: 300px;
   padding: 20px;
+  border-radius: 60px;
 }
 
 .single-funfacts-about .top {
-  display: flex;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-.single-funfacts-about .top .title {
-  margin-bottom: 0;
-  font-size: 60px;
-  position: relative;
+    gap: 20px;
+      margin-bottom: 30px;
+    }
+  
+@media only screen and (max-width: 500px) {
+  .single-funfacts-about .top .title {
+  font-size: 40px;
+  }
 }
 .single-funfacts-about .top .title::after {
   position: absolute;
@@ -22760,15 +22794,11 @@ body.index-nine .single-case-wrapper {
 }
 .single-funfacts-about p.disc {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   font-family: var(--font-primary);
 }
 .single-funfacts-about .icon {
-  width: 80px;
-  height: 80px;
-  background: #FF6600;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25524,6 +25554,8 @@ body.index-nine .single-case-wrapper {
   border: 1px solid #F0F0F0;
   border-radius: 15px;
   height: 100%;
+  display: flex;
+    align-items: center;
 }
 .single-contact-one-inner .thumbnail {
   display: block;
@@ -25888,6 +25920,7 @@ body.index-nine .single-case-wrapper {
 
 .rts-service-area-three {
   background: #F8F8F8;
+  margin-top: 60px;
 }
 .rts-service-area-three .title-three-center .bg-title {
   z-index: 0;
@@ -25983,20 +26016,22 @@ body.index-nine .single-case-wrapper {
 }
 .rts-single-service-three .thumbnail-area {
   overflow: hidden;
+  display: flex;
   position: relative;
   flex-basis: 56%;
+  align-items: center;
+    justify-content: center;
 }
 .rts-single-service-three .thumbnail-area img {
-  max-width: 100%;
   transition: 0.3s;
-  min-width: 100%;
-  width: max-content;
+  height: 200px;
 }
 .rts-single-service-three .thumbnail-area:hover img {
   transform: scale(1.05);
 }
 .rts-single-service-three .content-area {
   margin-left: 22px;
+  width: 50%;
 }
 .rts-single-service-three .content-area a .title {
   margin-bottom: 9px;
@@ -26004,6 +26039,7 @@ body.index-nine .single-case-wrapper {
   border-bottom: 1px solid #E1E1E1;
   transition: 0.3s;
 }
+
 .rts-single-service-three .content-area a .title:hover {
   color: var(--color-primary);
 }
@@ -26557,7 +26593,8 @@ form.appoinment-form select option {
 }
 
 .about-a-p-cont {
-  padding-left: 65px;
+  display: flex;
+    padding: 40px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-a-p-cont {
@@ -29981,8 +30018,7 @@ form.appoinment-form select option {
 .rts-faq-area-three-start {
   background: #151515;
   height: 495px;
-  margin-bottom: 50px;
-    margin-top: 50px;
+  height: auto;
 }
 @media (max-width: 1400px) {
   .rts-faq-area-three-start {
@@ -30015,6 +30051,7 @@ form.appoinment-form select option {
   background: #FDFDFD;
   box-shadow: 0px 7px 68px 7px rgba(0, 0, 0, 0.06);
   margin-top: -60px;
+  margin-bottom: -60px;
 }
 @media (max-width: 1400px) {
   .faq-main-wrapper-three {
@@ -32436,6 +32473,7 @@ form.appoinment-form select option {
   line-height: 58px;
   color: #fff;
   margin-bottom: 50px;
+  max-width: 250px;
 }
 @media (max-width: 450px) {
   .left-footer-wrapper-3 .title {
@@ -32465,8 +32503,8 @@ form.appoinment-form select option {
   font-weight: 600;
 }
 .right-footer-wrapper-3 .single-information a {
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 500;
+    font-size: 20px;
   line-height: 26px;
   color: #fff;
   transition: 0.3s;
@@ -32479,7 +32517,7 @@ form.appoinment-form select option {
   display: block;
   color: #7E7E7E;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   margin-bottom: 13px;
   transition: 0.3s;
