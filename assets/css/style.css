@@ -26038,6 +26038,7 @@ body.index-nine .single-case-wrapper {
   padding-bottom: 15px;
   border-bottom: 1px solid #E1E1E1;
   transition: 0.3s;
+  font-size: 26px;
 }
 
 .rts-single-service-three .content-area a .title:hover {
@@ -30093,6 +30094,23 @@ form.appoinment-form select option {
   margin-bottom: 14px;
   padding-bottom: 15px;
 }
+.accordion-three .accordion-item h1 {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 10px;
+  background: transparent;
+}
+
+.accordion-three .accordion-item h1 button {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0C0A0A;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
 .accordion-three .accordion-item h2 {
   border: none;
   box-shadow: none;
@@ -30130,7 +30148,7 @@ form.appoinment-form select option {
 }
 .accordion-three .accordion-item .accordion-body p.disc {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
 }
 
